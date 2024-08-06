@@ -23,9 +23,26 @@
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
     padding: 50px;
     width: 50%;
+
+    h3{
+      /* font-size: 30px; */
+      font-family: Avenir Next;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 54.64px;
+      letter-spacing: -0.04em;
+      text-align: left;
+      color: #213F7D;
+    }
+    p{
+      margin: -40px 0 50px;
+      font-size: 20px;
+      color: #545F7D;
+    }
   }
 
   .login-form {
+    margin-top: 1rem;
     width: 300px;
     border-radius: 5px;
     text-align: center;
@@ -53,7 +70,7 @@
         right: 10px;
         background: none;
         border: none;
-        color: green;
+        color: #39CDCC;
         cursor: pointer;
       }
     }
@@ -61,7 +78,7 @@
     .login-button {
       width: 100%;
       padding: 10px;
-      background-color: green;
+      background-color: #39CDCC;
       color: white;
       border: none;
       border-radius: 5px;
@@ -69,19 +86,19 @@
       margin-top: 10px;
 
       &:hover {
-        background-color: darkgreen;
+        background-color: #18a1a1;
       }
     }
 
     .forgot-password-link {
       display: block;
       margin: 10px 0 20px;
-      color: green;
+      color: #39CDCC;
       text-decoration: none;
       text-align: left;
 
       &:hover {
-        color: darkgreen;
+        color: #18a1a1;
       }
     }
   }
