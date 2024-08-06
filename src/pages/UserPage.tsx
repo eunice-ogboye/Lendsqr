@@ -1,8 +1,11 @@
 import React from 'react'
+import DashboardPage from './DashboardPage'
 
 function UserPage() {
   return (
-    <div>UserPage</div>
+    <div>
+      <DashboardPage />
+    </div>
   )
 }
 

@@ -29,7 +29,7 @@ const TopNav: React.FC = () => {
         <FaBell className="notification-icon" />
         <div className="profile" onClick={toggleDropdown}>
           <img src={User} alt="Profile" />
-          <span className="name">John Doe</span>
+          <span className="name">Adedeji</span>
           <FaCaretDown className="dropdown-icon" />
           {dropdownVisible && (
             <div className="dropdown-menu">
