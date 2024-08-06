@@ -1,0 +1,120 @@
+.login {
+  .login-logo {
+    width: 150px;
+    padding: 2rem 4rem;
+    margin-bottom: 20px;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    .login-img {
+      width: 50%;
+      padding: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .form-container {
+    border-left: 2px solid #545F7D26;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 50%;
+  }
+
+  .login-form {
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+
+    .login-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .password-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      .login-input {
+        margin-bottom: 0;
+      }
+
+      .toggle-password {
+        position: absolute;
+        right: 10px;
+        background: none;
+        border: none;
+        color: green;
+        cursor: pointer;
+      }
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+
+      &:hover {
+        background-color: darkgreen;
+      }
+    }
+
+    .forgot-password-link {
+      display: block;
+      margin: 10px 0 20px;
+      color: green;
+      text-decoration: none;
+      text-align: left;
+
+      &:hover {
+        color: darkgreen;
+      }
+    }
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+
+    .login-img {
+      display: none;
+    }
+
+    .form-container {
+      border-left: none;
+      width: auto;
+      padding: 20px;
+    }
+
+    .login-logo {
+      padding: 1rem 2rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .login-form {
+      width: 100%;
+    }
+
+    .form-container {
+      padding: 10px;
+    }
+  }
+}
