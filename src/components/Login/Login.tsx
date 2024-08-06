@@ -22,7 +22,6 @@ const Login: React.FC = () => {
        <h3>Welcome!</h3>
         <p>Enter details to login.</p>
       <form className="login-form">
-        <input type="text" placeholder="Username" className="login-input" />
           <input type="text" placeholder="Username" className="login-input" />
         <div className="password-container">
           <input
