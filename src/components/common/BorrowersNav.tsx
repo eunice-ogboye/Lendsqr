@@ -10,6 +10,12 @@ const BorrowersNav: React.FC = () => {
     { name: 'Savings', icon: <FaPiggyBank /> },
     { name: 'Whitelists', icon: <FaCheck /> },
     { name: 'Decision Models', icon: <FaChartBar /> },
+    { name: 'Decision Models', icon: <FaChartBar /> },
+    { name: 'Decision Models', icon: <FaChartBar /> },
+    { name: 'Decision Models', icon: <FaChartBar /> },
+    { name: 'Decision Models', icon: <FaChartBar /> },
+    { name: 'Decision Models', icon: <FaChartBar /> },
+    { name: 'Decision Models', icon: <FaChartBar /> },
     // Add more menus here...
   ];
 
