@@ -1,0 +1,12 @@
+.data-table {
+    margin: 20px;
+  }
+  
+  .data-table .rdt_TableHead {
+    background-color: #f4f4f4;
+  }
+  
+  .data-table .rdt_TableRow:hover {
+    background-color: #f1f1f1;
+  }
+  
