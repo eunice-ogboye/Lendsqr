@@ -3,7 +3,7 @@
 import React,  { useState }  from 'react';
 import './Login.css';
 import logo from '../../assets/images/logo.png'
-import hero from '../../assets/images/signin.jpeg';
+import hero from '../../assets/images/signin.png';
 
 
 const Login: React.FC = () => {
@@ -15,15 +15,17 @@ const Login: React.FC = () => {
   return (
 
    <div className="login">
-     <img src={logo} alt="Logo" className="login-logo" />
+     
      <div className="login-container">
-        <img src={hero} alt="hero" className="login-img" />
-       <div className="form-container">
+      <img src={logo} alt="Logo" className="login-logo" />
+      <img src={hero} alt="hero" className="login-img" />  
+    </div>
+    <div className="form-container">
        <h3>Welcome!</h3>
         <p>Enter details to login.</p>
       <form className="login-form">
           <input type="email" placeholder="Email" className="login-input" />
-        <div className="password-container">
+        <div className="password-container" >
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Password"
@@ -37,14 +39,13 @@ const Login: React.FC = () => {
             {showPassword ? "HIDE" : "SHOW"}
           </button>
         </div>
-        <a href="/forgot-password" className="forgot-password-link">FORGET PASSWORD?</a>
+        <a href="/forgot-password" className="forgot-password-link">FORGOT PASSWORD?</a>
        
         
       
         <button type="submit" className="login-button">LOG IN</button>
       </form>
        </div>
-    </div>
    </div>
   );
 }

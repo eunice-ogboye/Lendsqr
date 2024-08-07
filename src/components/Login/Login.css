@@ -1,32 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;0,700;0,1000;1,300&family=Sen:wght@400..800&display=swap');
+* {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .login {
-  .login-logo {
-    width: 150px;
-    padding: 2rem 4rem;
-    margin-bottom: 20px;
-  }
+  display: flex;
+  height: 100vh;  
 
   .login-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
+    flex-direction: column;
+    gap: 7rem;
+    width: 50%;
+    padding: 5rem 0 0 5rem;
+    background-color: #fcfbfb9d;
+
+    .login-logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
 
     .login-img {
-      width: 50%;
-      padding: 2rem;
+      width: 80%;
     }
   }
 
   .form-container {
-    border-left: 2px solid #545F7D26;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
     padding: 200px 50px;
-    margin-top: -200px;
     width: 50%;
+    background-color: #fff;
 
     h3{
-      /* font-size: 30px; */
-      font-family: Avenir Next;
       font-size: 40px;
       font-weight: 700;
       line-height: 54.64px;
@@ -43,17 +49,18 @@
 
   .login-form {
     margin-top: 1rem;
-    width: 300px;
+    width: 447px;
     border-radius: 5px;
     text-align: center;
 
     .login-input {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
+      padding: 15px;
+      margin-bottom: 25px;
       border: 1px solid #ccc;
       border-radius: 5px;
       box-sizing: border-box;
+      outline: none;
     }
 
     .password-container {
@@ -71,7 +78,8 @@
         font-size: 10px;
         background: none;
         border: none;
-        color: #39CDCC;
+      font-weight: 600;
+      color: #39CDCC;
         cursor: pointer;
       }
     }
@@ -96,6 +104,7 @@
       margin: 10px 0 20px;
       color: #39CDCC;
       text-decoration: none;
+      font-weight: 600;
       text-align: left;
       font-size: 10px;
 
@@ -106,7 +115,36 @@
   }
 
   /* Responsive Design */
+  @media (max-width: 968px) {
+    .login {
+      flex-direction: column;
+    }
+    .login-container {
+      flex-direction: column;
+      height: 20px;
+    }
+
+    .login-img {
+      display: none;
+    }
+
+    .form-container {
+      border-left: none;
+      width: auto;
+      padding: 20px;
+      padding: 20px 50px;
+      margin-top: 10px;
+    }
+
+    .login-logo {
+      padding: 1rem 2rem;
+      margin-bottom: 10px;
+    }
+  }
   @media (max-width: 768px) {
+    .login {
+      flex-direction: column;
+    }
     .login-container {
       flex-direction: column;
     }
