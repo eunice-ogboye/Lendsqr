@@ -1,3 +1,13 @@
 .details{
     background-color: #eee;
+    width: 85%;
+    height: 100vh;
+    padding: 20px 3rem;
+
+    h3{
+        color: #213F7D;
+        font-size: 24px;
+        font-weight: 700;
+        padding-left: 2rem;
+    }
 }
