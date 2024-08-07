@@ -20,7 +20,7 @@ const TopNav: React.FC = () => {
     <div className="top-nav">
       <img src={logo} alt="Logo" className="login-logo" />
       <div className="search-container">
-        <input type="text" placeholder="Search..." className="filter-search" />
+        <input type="text" placeholder="Search for anything" className="filter-search" />
         <button className="search-button">
           <FaSearch />
         </button>
